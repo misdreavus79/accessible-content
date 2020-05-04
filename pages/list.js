@@ -1,0 +1,56 @@
+import { useState } from "react";
+import Head from "next/head";
+
+export default function List() {
+  return (
+    <>
+      <Head>
+        <title>Flyout Menus</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <main>
+        <header role="banner">
+          <h1>UI Chapter: Accessible Menus</h1>
+        </header>
+        <ul>
+          <li>
+            <a>Futniture</a>
+          </li>
+          <li>
+            <a>Outdoor</a>
+          </li>
+          <li>
+            <a>Bed & Bath</a>
+          </li>
+          <li>
+            <a>Rugs</a>
+          </li>
+          <li>
+            <a>Decor & Pillows</a>
+          </li>
+          <li>
+            <a>Storage</a>
+          </li>
+          <li>
+            <a>Lighting</a>
+          </li>
+          <li>
+            <a>Kitchen</a>
+          </li>
+          <li>
+            <a>Baby & Kids</a>
+          </li>
+          <li>
+            <a>Renovation</a>
+          </li>
+          <li>
+            <a>Appliances</a>
+          </li>
+          <li>
+            <a>Pet</a>
+          </li>
+        </ul>
+      </main>
+    </>
+  );
+}

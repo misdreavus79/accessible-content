@@ -1,5 +1,5 @@
-import { useState } from "react";
 import Head from "next/head";
+import Link from "next/link";
 
 export default function List() {
   return (
@@ -10,8 +10,17 @@ export default function List() {
       </Head>
       <main>
         <header role="banner">
-          <h1>UI Chapter: Accessible Menus</h1>
+          <h1>Step 1: Create a list</h1>
         </header>
+        <p>
+          Create a list that, when rendered without any styling can still be
+          followed by a user.
+        </p>
+        <p>
+          Note that in the below list is not rendered as a list of links by the
+          accessibility tree, since these <b>&lt;a&gt;</b> tags lack href
+          attributes.
+        </p>
         <ul>
           <li>
             <a>Futniture</a>
@@ -50,6 +59,7 @@ export default function List() {
             <a>Pet</a>
           </li>
         </ul>
+        <Link href="/menus/nav">Next Section</Link>
       </main>
     </>
   );

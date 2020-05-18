@@ -1,4 +1,4 @@
-import { useState } from "react";
+import Link from "next/link";
 import Head from "next/head";
 
 export default function Nav() {
@@ -10,8 +10,13 @@ export default function Nav() {
       </Head>
       <main>
         <header role="banner">
-          <h1>UI Chapter: Accessible Menus</h1>
+          <h1>Step 2: wrap list in a &lt;nav&gt; element</h1>
         </header>
+        <p>
+          Reference the accessibility tree from last time and note the
+          difference in this node. It now presents as a list within a nav
+          instead of just a list.
+        </p>
         <nav>
           <ul>
             <li>
@@ -52,11 +57,8 @@ export default function Nav() {
             </li>
           </ul>
         </nav>
+        <Link href="/menus/nav-labeled">Next Section</Link>
       </main>
     </>
   );
 }
-
-// Notes: 
-// Reference the accessibility tree from last time and note the difference in this node between a list and a list within a nav.
-// <a> tags without href attributes are not recognized by screen readers.
